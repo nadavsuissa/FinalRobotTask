@@ -4,7 +4,7 @@ def start():
     # Valid and Wanted Distance
     vision_ctrl.set_marker_detection_distance(1)
     # Type of Movement
-    robot_ctrl.set_mode(rm_define.robot_mode_chassis_follow)
+    robot_ctrl.set_mode(rm_define.robot_mode_free)
     # Defines of Param
     gimbal_ctrl.set_rotate_speed(30)
     chassis_ctrl.set_trans_speed(0.4)
@@ -31,7 +31,7 @@ def vision_recognized_marker_number_one(msg):
     led_ctrl.set_bottom_led(rm_define.armor_bottom_all, 255, 0, 0, rm_define.effect_always_on)
     time.sleep(2)
     chassis_ctrl.stop()
-
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_left, 90)
     gimbal_ctrl.rotate_with_degree(rm_define.gimbal_right, 90)
     chassis_ctrl.move(0)
 
@@ -42,6 +42,7 @@ def vision_recognized_marker_number_two(msg):
     time.sleep(2)
     chassis_ctrl.stop()
 
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_left, 90)
     gimbal_ctrl.rotate_with_degree(rm_define.gimbal_right, 90)
     chassis_ctrl.move(0)
 
@@ -52,6 +53,7 @@ def vision_recognized_marker_number_three(msg):
     time.sleep(2)
     chassis_ctrl.stop()
 
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_left, 90)
     gimbal_ctrl.rotate_with_degree(rm_define.gimbal_right, 90)
     chassis_ctrl.move(0)
 
@@ -63,6 +65,7 @@ def vision_recognized_marker_letter_A(msg):
     chassis_ctrl.stop()
 
     gimbal_ctrl.rotate_with_degree(rm_define.gimbal_left, 90)
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_right, 90)
     chassis_ctrl.move(0)
 
 
@@ -73,6 +76,7 @@ def vision_recognized_marker_letter_B(msg):
     chassis_ctrl.stop()
 
     gimbal_ctrl.rotate_with_degree(rm_define.gimbal_left, 90)
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_right, 90)
     chassis_ctrl.move(0)
 
 
@@ -83,6 +87,7 @@ def vision_recognized_marker_letter_C(msg):
     chassis_ctrl.stop()
 
     gimbal_ctrl.rotate_with_degree(rm_define.gimbal_left, 90)
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_right, 90)
     chassis_ctrl.move(0)
 
 
@@ -91,5 +96,4 @@ def vision_recognized_marker_trans_red_heart(msg):
     led_ctrl.set_bottom_led(rm_define.armor_bottom_all, 255, 0, 255, rm_define.effect_always_on)
     time.sleep(2)
     chassis_ctrl.stop()
-
     gimbal_ctrl.rotate_with_degree(rm_define.gimbal_right, 180)
