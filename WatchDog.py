@@ -20,7 +20,6 @@ def vision_recognized_people(msg):
     event of recognized people:
     shot the people and stop moving
     """
-    time.sleep(1)
     chassis_ctrl.stop()
     gun_ctrl.fire_once()
     gimbal_ctrl.rotate_with_degree(rm_define.gimbal_up, 35)
