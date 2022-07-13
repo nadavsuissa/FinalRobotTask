@@ -4,7 +4,8 @@ def start():
     # Function: armor_ctrl.set_hit_sensitivity(value)
     # Parameters:
     # ● value(int): [0, 10]
-
+    robot_ctrl.set_mode(rm_define.robot_mode_free)
+    gimbal_ctrl.set_rotate_speed(500)
     armor_ctrl.set_hit_sensitivity(9)
 
     while True:

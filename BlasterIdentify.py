@@ -1,7 +1,5 @@
 # Make Robomaster fire his blaster every time he sees a person. Set the vision marker
 # detection distance from 0.5 to 3 for farther distances.
-from random import random
-
 
 def start():
     # Blaster fire example function:
