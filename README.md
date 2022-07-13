@@ -17,7 +17,7 @@ It mediates between the digital world and the real world and brings to life abst
              (BlasterIdentify.py)
              :dog:(WatchDog.py)
              :punch:Shoots in the direction of the blow(HitDetection.py)
-            :dart: (DriveandIdentify.py)
+            The robot recognizes numbers and shoots numbers in ascending order (DriveandIdentify.py)
 
 
 ----------------------------------------
@@ -42,10 +42,20 @@ _Detailed explanation of each action:_
  - ----------------------------------------
 
  - **Traveled by a number of applause:**:clap:
+ - 
  -  - ----------------------------------------
 
  - **Shoots in the direction of the blow**:punch:
 
+
+
+
+
+
+ -  - ----------------------------------------
+ - **The robot recognizes numbers and shoots numbers in ascending order:**:dart:
+
+The robot searches for the numbers so that it goes in the order of the numbers (you can set as many numbers as you want), we chose that the robot recognizes the mark of the numbers 1,2,3 at first the robot looks for the number 1 and shoots it and then continues to search for the consistent number of 1 which is 2 Another number or some other sign he ignores and continues to look for the next consistent number
 
  _Project participants:_
 ----------------------------------------
