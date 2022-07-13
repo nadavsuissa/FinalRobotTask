@@ -1,5 +1,5 @@
  ### _:fire:RoboMaster-S1_:fire:
- <img src="https://i.ytimg.com/vi/Lq2PCOamO6E/maxresdefault.jpg" width="600" height="300">
+ <img src="https://dji-blog.ru/wp-content/uploads/2020/08/robomaster_banner-1068x675.jpg" width="600" height="300">
 
 
  _Explanation of ROBOMASTER S1:_
