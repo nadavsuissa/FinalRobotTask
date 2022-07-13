@@ -2,9 +2,9 @@
 # Nadav David Rawan
 
 # Basic Defines:
-rotate_speed = 120 # Rotate Speed , Might Need to Change if too Fast!
-l1, l2 = 0, 255 # For Easy Fill Of RGB MATRIX
-seconds, milli_seconds = 1, .05 # For Timeout... Robot Must Rest
+rotate_speed = 120  # Rotate Speed , Might Need to Change if too Fast!
+l1, l2 = 0, 255  # For Easy Fill Of RGB MATRIX
+seconds, milli_seconds = 1, .05  # For Timeout... Robot Must Rest
 
 RGB1 = [
     [],  # Empty list box
@@ -47,12 +47,12 @@ def start():
         # Set Bottom Led - All - Color - Flash Effect
         led_ctrl.set_bottom_led(rm_define.armor_bottom_all, RGB1[j][0], RGB1[j][1], RGB1[j][2], rm_define.effect_flash)
 
-        for i in range(1, 9): # BY SDK - LED SEQUENCE IS 1-8(1 Til 9 in CS)
+        for i in range(1, 9):  # BY SDK - LED SEQUENCE IS 1-8(1 Til 9 in CS)
             # Function: led_ctrl.set_single_led(armor_enum, led_index, led_effect_enum)
             led_ctrl.set_single_led(rm_define.armor_top_all, [i], rm_define.effect_always_on)
             time.sleep(milli_seconds)
 
-        for i in range(1, 9): # Turn Every Led Off
+        for i in range(1, 9):  # Turn Every Led Off
             led_ctrl.set_single_led(rm_define.armor_top_all, [i], rm_define.effect_always_off)
             time.sleep(milli_seconds)
             led_ctrl.gun_led_off()

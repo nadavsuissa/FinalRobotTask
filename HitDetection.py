@@ -19,6 +19,7 @@ def start():
 
 def armor_hit_detection_bottom_front(msg):
     media_ctrl.play_sound(rm_define.media_sound_attacked, wait_for_complete_flag=False)
+
     led_ctrl.gun_led_on()
     gun_ctrl.fire_once()
     led_ctrl.gun_led_off()
@@ -28,20 +29,24 @@ def armor_hit_detection_bottom_front(msg):
 
 
 def armor_hit_detection_bottom_back(msg):
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_right, 180)
     media_ctrl.play_sound(rm_define.media_sound_attacked, wait_for_complete_flag=False)
     led_ctrl.gun_led_on()
     gun_ctrl.fire_once()
     led_ctrl.gun_led_off()
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_left, 180)
     led_ctrl.set_bottom_led(rm_define.armor_bottom_back, 255, 0, 0, rm_define.effect_always_on)
     time.sleep(.5)
     led_ctrl.set_bottom_led(rm_define.armor_bottom_back, 255, 255, 255, rm_define.effect_always_on)
 
 
 def armor_hit_detection_bottom_right(msg):
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_right, 90)
     media_ctrl.play_sound(rm_define.media_sound_attacked, wait_for_complete_flag=False)
     led_ctrl.gun_led_on()
     gun_ctrl.fire_once()
     led_ctrl.gun_led_off()
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_left, 90)
     led_ctrl.set_bottom_led(rm_define.armor_bottom_right, 255, 0, 0, rm_define.effect_always_on)
     time.sleep(.5)
     led_ctrl.set_bottom_led(rm_define.armor_bottom_right, 255, 255, 255, rm_define.effect_always_on)
@@ -49,9 +54,12 @@ def armor_hit_detection_bottom_right(msg):
 
 def armor_hit_detection_bottom_left(msg):
     media_ctrl.play_sound(rm_define.media_sound_attacked, wait_for_complete_flag=False)
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_left, 90)
     led_ctrl.gun_led_on()
     gun_ctrl.fire_once()
     led_ctrl.gun_led_off()
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_right, 90)
+
     led_ctrl.set_bottom_led(rm_define.armor_bottom_left, 255, 0, 0, rm_define.effect_always_on)
     time.sleep(.5)
     led_ctrl.set_bottom_led(rm_define.armor_bottom_left, 255, 255, 255, rm_define.effect_always_on)
