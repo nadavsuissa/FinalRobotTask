@@ -17,8 +17,14 @@ def start():
     while True:
         # Wait for each marcker by our order, we triggered will go to correct def func
         vision_ctrl.cond_wait(rm_define.cond_recognized_marker_number_one)
+        chassis_ctrl.set_wheel_speed(-40, -40, -40, -40)
+
         vision_ctrl.cond_wait(rm_define.cond_recognized_marker_number_two)
+        chassis_ctrl.set_wheel_speed(-40, -40, -40, -40)
+
         vision_ctrl.cond_wait(rm_define.cond_recognized_marker_number_three)
+        chassis_ctrl.set_wheel_speed(-40, -40, -40, -40)
+
         vision_ctrl.cond_wait(rm_define.cond_recognized_marker_letter_A)
         vision_ctrl.cond_wait(rm_define.cond_recognized_marker_letter_B)
         vision_ctrl.cond_wait(rm_define.cond_recognized_marker_letter_C)
@@ -42,8 +48,8 @@ def vision_recognized_marker_number_two(msg):
     time.sleep(2)
     chassis_ctrl.stop()
 
-    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_left, 90)
-    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_right, 90)
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_left, 45)
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_right, 45)
     chassis_ctrl.move(0)
 
 
@@ -53,8 +59,8 @@ def vision_recognized_marker_number_three(msg):
     time.sleep(2)
     chassis_ctrl.stop()
 
-    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_left, 90)
-    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_right, 90)
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_left, 45)
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_right, 45)
     chassis_ctrl.move(0)
 
 
@@ -64,8 +70,8 @@ def vision_recognized_marker_letter_A(msg):
     time.sleep(2)
     chassis_ctrl.stop()
 
-    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_left, 90)
-    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_right, 90)
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_left, 45)
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_right, 45)
     chassis_ctrl.move(0)
 
 
@@ -75,8 +81,8 @@ def vision_recognized_marker_letter_B(msg):
     time.sleep(2)
     chassis_ctrl.stop()
 
-    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_left, 90)
-    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_right, 90)
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_left, 45)
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_right, 45)
     chassis_ctrl.move(0)
 
 
@@ -86,8 +92,8 @@ def vision_recognized_marker_letter_C(msg):
     time.sleep(2)
     chassis_ctrl.stop()
 
-    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_left, 90)
-    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_right, 90)
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_left, 45)
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_right, 45)
     chassis_ctrl.move(0)
 
 
