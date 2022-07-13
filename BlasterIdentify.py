@@ -1,5 +1,3 @@
-# Make Robomaster fire his blaster every time he sees a person. Set the vision marker
-# detection distance from 0.5 to 3 for farther distances.
 
 def start():
     # Blaster fire example function:
@@ -7,17 +5,6 @@ def start():
     def exampleidentify():
         # Non Dependent
         robot_ctrl.set_mode(rm_define.robot_mode_free)
-
-        # Python
-        # API：
-        # Function: vision_ctrl.enable_detection(function_enum)
-        # vision_ctrl.disable_detection(function_enum)
-        # Parameters:
-        # ● function_enum(enum):
-        # ■ rm_define.vision_detection_marker
-        # ■ rm_define.vision_detection_pose
-        # ■ rm_define.vision_detection_car
-        # ■ rm_define.vision_detection_people
 
         vision_ctrl.enable_detection(rm_define.vision_detection_people)
         vision_ctrl.set_marker_detection_distance(1)
@@ -58,7 +45,5 @@ def start():
                     led_ctrl.set_top_led(rm_define.armor_top_all, 255, 255, 0, rm_define.effect_breath)
                     led_ctrl.set_bottom_led(rm_define.armor_bottom_all, 255, 255, 1, rm_define.effect_breath)
                     break
-
     # Call
-
     exampleidentify()
