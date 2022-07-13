@@ -15,9 +15,9 @@ It mediates between the digital world and the real world and brings to life abst
              (BlasterFunctionality.py)
              Traveled by a number of applause(Cllaps.py)
              (BlasterIdentify.py)
-             (WatchDog.py)
-             Shoots in the direction of the blow(HitDetection.py)
-             (DriveandIdentify.py)
+             :dog:(WatchDog.py)
+             :punch:Shoots in the direction of the blow(HitDetection.py)
+            :dart: (DriveandIdentify.py)
 
 
 ----------------------------------------
@@ -26,6 +26,25 @@ It mediates between the digital world and the real world and brings to life abst
 _Detailed explanation of each action:_
 ----------------------------------------
 
+ - **Changes the color of the lights:**:rainbow:
+  
+     The robot changes its colors
+  
+----------------------------------------
+
+ - **Traveling in square trouble:**:black_square_button:
+ 
+     The robot goes in a square shape, ie that goes at equal distances for example the distance that went to the right will be the same distance that           progresses forward so that it shows his ability to walk in any shape we want we chose a square
+----------------------------------------
+
+
+ - **Changes the color of the lights:**
+ - ----------------------------------------
+
+ - **Traveled by a number of applause:**:clap:
+ -  - ----------------------------------------
+
+ - **Shoots in the direction of the blow**:punch:
 
 
  _Project participants:_
