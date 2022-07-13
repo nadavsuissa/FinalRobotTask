@@ -16,8 +16,8 @@ It mediates between the digital world and the real world and brings to life abst
              Traveled by a number of applause(Cllaps.py)
              (BlasterIdentify.py)
              :dog:(WatchDog.py)
-             :punch:Shoots in the direction of the blow(HitDetection.py)
-            The robot recognizes numbers and shoots numbers in ascending order (DriveandIdentify.py)
+             Shoots in the direction of the blow(HitDetection.py)
+             The robot recognizes numbers and shoots numbers in ascending order (DriveandIdentify.py)
 
 
 ----------------------------------------
