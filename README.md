@@ -5,7 +5,10 @@
  _Explanation of ROBOMASTER S1:_
 ----------------------------------------
 
-It mediates between the digital world and the real world and brings to life abstract theories through practical actions so that it can identify up to 44 markers, gestures and applause to expand the possibilities for coding, fighting and learning
+It mediates between the digital world and the real world and brings to life abstract theories through practical actions so that it can identify up to 44 markers, is able to identify and track any individual you select, gestures and applause to expand the possibilities for coding, fighting and learning
+
+
+
 
 :pushpin:_The actions of the robot:_
 ----------------------------------------
