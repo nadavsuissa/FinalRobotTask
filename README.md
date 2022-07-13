@@ -58,6 +58,13 @@ _Detailed explanation of each action:_
 
 The robot searches for the numbers so that it goes in the order of the numbers (you can set as many numbers as you want), we chose that the robot recognizes the mark of the numbers 1,2,3 at first the robot looks for the number 1 and shoots it and then continues to search for the consistent number of 1 which is 2 Another number or some other sign he ignores and continues to look for the next consistent number
 
+
+----------------------------------------
+ _references_
+ 
+ 
+ 
+----------------------------------------
  _Project participants:_
 ----------------------------------------
 Nadav Suissa,David Feust,Rawan Shareef
