@@ -42,7 +42,8 @@ _Detailed explanation of each action:_
  - ----------------------------------------
 
  - **Traveled by a number of applause:**:clap:
- - 
+  
+      The robot moves according to the number of applause, if you clap twice it goes forward, if you clap twice again then it goes back, twice more it goes right and twice more it goes left
  -  - ----------------------------------------
 
  - **Shoots in the direction of the blow**:punch:
