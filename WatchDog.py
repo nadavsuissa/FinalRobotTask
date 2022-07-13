@@ -1,50 +1,30 @@
-drive_speed=0.3
-wheel_degree=(90,180,-90,0)
-seconds=2
-
 def start():
-
-    robot_ctrl.set_mode(rm_define.robot_mode_gimbal_follow)
+    armor_ctrl.set_hit_sensitivity(10)
     vision_ctrl.enable_detection(rm_define.vision_detection_people)
-    vision_ctrl.set_marker_detection_distance(1)
- while True:
+    gimbal_ctrl.set_rotate_speed(100)
+    robot_ctrl.set_mode(rm_define.robot_mode_free)
+    chassis_ctrl.set_rotate_speed(180)
 
-    for i in wheel_degree:
-        chassis_ctrl.set_trans_speed(drive_speed)
-        chassis_ctrl.move_with_time(i,5)
-        while True:
-            vision_ctrl.cond_wait(rm_define.cond_recognized_people)
+    while True:
+        led_ctrl.set_bottom_led(rm_define.armor_bottom_all, 69, 215, 255, rm_define.effect_always_on)
+        led_ctrl.set_top_led(rm_define.armor_top_all, 100, 0, 100, rm_define.effect_always_on)
+        chassis_ctrl.move(0)
+        gimbal_ctrl.rotate_with_degree(rm_define.gimbal_left, 90)
+        gimbal_ctrl.rotate_with_degree(rm_define.gimbal_right, 90)
+        chassis_ctrl.rotate(rm_define.clockwise)
+        time.sleep(1)
 
-            while True:
 
-                gimbal_ctrl.set_rotate_speed(55)
-                # Rotate sound
-                media_ctrl.play_sound(rm_define.media_sound_gimbal_rotate, wait_for_complete_flag=False)
-                # Flash
-                led_ctrl.set_flash(rm_define.armor_all, 4)
-                led_ctrl.set_top_led(rm_define.armor_top_all, 255, 0, 0, rm_define.effect_marquee)
-                led_ctrl.set_bottom_led(rm_define.armor_bottom_all, 255, 0, 0, rm_define.effect_flash)
-
-                gimbal_ctrl.rotate_with_degree(rm_define.gimbal_up, 35)
-
-                led_ctrl.set_flash(rm_define.armor_all, 9)
-                led_ctrl.set_top_led(rm_define.armor_top_all, 0, 255, 255, rm_define.effect_flash)
-                led_ctrl.set_bottom_led(rm_define.armor_bottom_all, 0, 255, 255, rm_define.effect_flash)
-
-                media_ctrl.play_sound(rm_define.media_sound_shoot, wait_for_complete_flag=True)
-                media_ctrl.play_sound(rm_define.media_sound_shoot, wait_for_complete_flag=True)
-
-                commands_exit = random.randint(1, 2)
-
-                if commands_exit == 1:
-                    continue
-                elif commands_exit == 2:
-                    led_ctrl.set_flash(rm_define.armor_all, 4)
-                    led_ctrl.set_top_led(rm_define.armor_top_all, 255, 0, 0, rm_define.effect_marquee)
-                    led_ctrl.set_bottom_led(rm_define.armor_bottom_all, 255, 0, 0, rm_define.effect_flash)
-
-                    gimbal_ctrl.recenter()
-
-                    led_ctrl.set_top_led(rm_define.armor_top_all, 255, 255, 0, rm_define.effect_breath)
-                    led_ctrl.set_bottom_led(rm_define.armor_bottom_all, 255, 255, 1, rm_define.effect_breath)
-                    break
+def vision_recognized_people(msg):
+    """
+    event of recognized people:
+    shot the people and stop moving
+    """
+    time.sleep(1)
+    chassis_ctrl.stop()
+    gun_ctrl.fire_once()
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_up, 35)
+    led_ctrl.set_bottom_led(rm_define.armor_bottom_all, 255, 0, 0, rm_define.effect_breath)
+    led_ctrl.set_top_led(rm_define.armor_top_all, 255, 0, 0, rm_define.effect_breath)
+    media_ctrl.play_sound(rm_define.media_sound_recognize_success)
+    gimbal_ctrl.rotate_with_degree(rm_define.gimbal_down, 35)
