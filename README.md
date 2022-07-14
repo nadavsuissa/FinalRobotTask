@@ -65,6 +65,7 @@ The robot searches for the numbers so that it goes in the order of the numbers (
  ----------------------------------------
 
 (https://www.dji.com/robomaster-s1) 
+https://github.com/dji-sdk/robomaster-sdk
 
 ----------------------------------------
  _Project participants:_
