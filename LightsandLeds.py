@@ -3,30 +3,29 @@
 
 # Basic Defines:
 rotate_speed = 120  # Rotate Speed , Might Need to Change if too Fast!
-l1, l2 = 0, 255  # For Easy Fill Of RGB MATRIX
 seconds, milli_seconds = 1, .05  # For Timeout... Robot Must Rest
 
 RGB1 = [
     [],  # Empty list box
-    [l2, l2, l2],  # RGB White
-    [l2, l1, l1],  # RGB Red
-    [l2, l2, l1],  # RGB Yellow
-    [l1, l1, l2],  # RGB Blue
-    [l1, l2, l1],  # RGB Green
-    [l2, l1, l2],  # RGB Pink
-    [l1, l2, l2],  # RGB Cyan
+    [255, 255, 255],  # RGB White
+    [255, 0, 0],  # RGB Red
+    [255, 255, 0],  # RGB Yellow
+    [0, 0, 255],  # RGB Blue
+    [0, 255, 0],  # RGB Green
+    [255, 0, 255],  # RGB Pink
+    [0, 255, 255],  # RGB Cyan
 ]
 
 RGB2 = [
     [],  # Empty list box
-    [l2, l1, l1],  # RGB Red
-    [l2, l2, l1],  # RGB Yellow
-    [l1, l1, l2],  # RGB Blue
-    [l1, l2, l1],  # RGB Green
-    [l2, l1, l1],  # RGB Red
-    [l2, l2, l1],  # RGB Yellow
-    [l1, l1, l2],  # RGB Blue
-    [l1, l2, l1],  # RGB Green
+    [255, 0, 0],  # RGB Red
+    [255, 255, 0],  # RGB Yellow
+    [0, 0, 255],  # RGB Blue
+    [0, 255, 0],  # RGB Green
+    [255, 0, 0],  # RGB Red
+    [255, 255, 0],  # RGB Yellow
+    [0, 0, 255],  # RGB Blue
+    [0, 255, 0],  # RGB Green
 ]
 
 
@@ -42,7 +41,8 @@ def start():
 
     for j in range(1, 8):  # By Sdk this is how the leds are indexed
         led_ctrl.gun_led_on()  # Turn on Led that's on the Gun
-        # Function: led_ctrl.set_top_led(armor_enum, r, g, b, led_effect_enum) - Top All , COLOR - RGB FORMAT - effect - ALLWAYS OFF
+        # Function: led_ctrl.set_top_led(armor_enum, r, g, b, led_effect_enum) - Top All
+        # COLOR - RGB FORMAT - effect - ALLWAYS OFF
         led_ctrl.set_top_led(rm_define.armor_top_all, RGB1[j][0], RGB1[j][1], RGB1[j][2], rm_define.effect_always_off)
         # Set Bottom Led - All - Color - Flash Effect
         led_ctrl.set_bottom_led(rm_define.armor_bottom_all, RGB1[j][0], RGB1[j][1], RGB1[j][2], rm_define.effect_flash)
@@ -188,15 +188,15 @@ def start():
     chassis_ctrl.stop()
 
     led_ctrl.set_flash(rm_define.armor_all, 6)
-    led_ctrl.set_top_led(rm_define.armor_top_all, l2, l1, l1, rm_define.effect_marquee)
-    led_ctrl.set_bottom_led(rm_define.armor_bottom_all, l2, l1, l1, rm_define.effect_flash)
+    led_ctrl.set_top_led(rm_define.armor_top_all, y, x, x, rm_define.effect_marquee)
+    led_ctrl.set_bottom_led(rm_define.armor_bottom_all, y, x, x, rm_define.effect_flash)
     gimbal_ctrl.rotate(rm_define.gimbal_up)
     media_ctrl.play_sound(rm_define.media_sound_gimbal_rotate, wait_for_complete_flag=False)
     time.sleep(seconds + .5)
 
     led_ctrl.set_flash(rm_define.armor_all, 8)
-    led_ctrl.set_top_led(rm_define.armor_top_all, l1, l2, l2, rm_define.effect_flash)
-    led_ctrl.set_bottom_led(rm_define.armor_bottom_all, l1, l2, l2, rm_define.effect_flash)
+    led_ctrl.set_top_led(rm_define.armor_top_all, x, y, y, rm_define.effect_flash)
+    led_ctrl.set_bottom_led(rm_define.armor_bottom_all, x, y, y, rm_define.effect_flash)
 
     led_ctrl.gun_led_on()
     media_ctrl.play_sound(rm_define.media_sound_shoot, wait_for_complete_flag=True)
@@ -205,8 +205,8 @@ def start():
     led_ctrl.gun_led_off()
 
     led_ctrl.set_flash(rm_define.armor_all, 6)
-    led_ctrl.set_top_led(rm_define.armor_top_all, l2, l1, l1, rm_define.effect_marquee)
-    led_ctrl.set_bottom_led(rm_define.armor_bottom_all, l2, l1, l1, rm_define.effect_flash)
+    led_ctrl.set_top_led(rm_define.armor_top_all, y, x, x, rm_define.effect_marquee)
+    led_ctrl.set_bottom_led(rm_define.armor_bottom_all, y, x, x, rm_define.effect_flash)
     gimbal_ctrl.rotate(rm_define.gimbal_down)
     media_ctrl.play_sound(rm_define.media_sound_gimbal_rotate, wait_for_complete_flag=False)
 

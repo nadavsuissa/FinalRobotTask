@@ -6,8 +6,8 @@ def start():
 
     led_ctrl.set_top_led(rm_define.armor_top_right, 0, 255, 255, rm_define.effect_always_off)
     led_ctrl.set_single_led(rm_define.armor_top_right, [2, 5, 6, 8], rm_define.effect_always_on)
-    chassis_ctrl.set_wheel_speed(speed, speed, speed, speed)  # Should Be Never More then 20 in all wheels - for now lets do 300
-    # Now let's got backwards:
+    chassis_ctrl.set_wheel_speed(speed, speed, speed, speed)
+    # got backwards:
     time.sleep(sleep_time)
     chassis_ctrl.set_wheel_speed(-speed, -speed, -speed, -speed)
     time.sleep(sleep_time)

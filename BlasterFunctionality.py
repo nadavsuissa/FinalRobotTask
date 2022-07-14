@@ -1,7 +1,6 @@
+
 # Blaster functionality:
 def start():
-    # Not Fun Enough,
-    # Must For Free non dependent movement
     robot_ctrl.set_mode(rm_define.robot_mode_free)
 
     gun_ctrl.set_fire_count(5)  # Burst Of Gel Beads
@@ -19,10 +18,14 @@ def start():
 
 
 def shoot():
+    """
+    shoot function
+    operations to execute in every shoot.
+    play media, fire, and turn on leds
+    """
     gimbal_ctrl.rotate_with_degree(rm_define.gimbal_up, 40)
-    # Fire but not Automatic:
     led_ctrl.gun_led_on()
-    for count in range(5):
+    for _ in range(5):
         gun_ctrl.fire_once()
     led_ctrl.set_top_led(rm_define.armor_top_all, 255, 0, 0, rm_define.effect_breath)
     gun_ctrl.fire_once()

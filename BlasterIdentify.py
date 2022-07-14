@@ -1,9 +1,10 @@
 
 def start():
-    # Blaster fire example function:
+    """
+    Blaster fire example function
+    """
 
     def exampleidentify():
-        # Non Dependent
         robot_ctrl.set_mode(rm_define.robot_mode_free)
 
         vision_ctrl.enable_detection(rm_define.vision_detection_people)

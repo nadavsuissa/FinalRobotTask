@@ -1,9 +1,4 @@
 def start():
-    # Python
-    # API：
-    # Function: armor_ctrl.set_hit_sensitivity(value)
-    # Parameters:
-    # ● value(int): [0, 10]
     robot_ctrl.set_mode(rm_define.robot_mode_free)
     gimbal_ctrl.set_rotate_speed(500)
     armor_ctrl.set_hit_sensitivity(9)
@@ -18,9 +13,10 @@ def start():
         armor_ctrl.cond_wait(rm_define.cond_armor_bottom_left_hit)
 
 
+# events for hits from all sides:
+
 def armor_hit_detection_bottom_front(msg):
     media_ctrl.play_sound(rm_define.media_sound_attacked, wait_for_complete_flag=False)
-
     led_ctrl.gun_led_on()
     gun_ctrl.fire_once()
     led_ctrl.gun_led_off()

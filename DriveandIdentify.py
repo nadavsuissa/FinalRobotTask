@@ -1,4 +1,7 @@
 def start():
+    """"
+    identify numbers markers
+    """
     # base definitions
     robot_ctrl.set_mode(rm_define.robot_mode_chassis_follow)
     chassis_ctrl.set_trans_speed(0.3)

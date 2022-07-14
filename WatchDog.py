@@ -1,8 +1,11 @@
 def start():
+    """
+    watch dog function
+    """
     armor_ctrl.set_hit_sensitivity(10)
     vision_ctrl.enable_detection(rm_define.vision_detection_people)
-    gimbal_ctrl.set_rotate_speed(100)
     robot_ctrl.set_mode(rm_define.robot_mode_free)
+    gimbal_ctrl.set_rotate_speed(100)
     chassis_ctrl.set_rotate_speed(180)
 
     while True:
