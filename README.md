@@ -49,6 +49,9 @@ _Detailed explanation of each action:_
     It's like a watchdog he goes around in every possible direction so he has the ability to look for a human, if he recognizes a human then he shoots him
 
 
+https://user-images.githubusercontent.com/73065095/178969199-dd33f848-a793-4027-9f6f-e8422d320d83.mp4
+
+
 
 
 
