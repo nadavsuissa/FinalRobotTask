@@ -41,7 +41,11 @@ _Detailed explanation of each action:_
 
  - **Traveled by a number of applause:**:clap:
   
-      The robot moves according to the number of applause, if you clap twice it goes forward, if you clap twice again then it goes back, twice more it goes right and twice more it goes left
+      The robot moves according to the number of applause, if you clap twice it goes forward, if you clap twice again then it goes back, twice more it goes right and twice more it goes left The third time he is applauded he stops
+      
+      
+      https://user-images.githubusercontent.com/73065095/178971229-238b66e2-da24-49cd-8672-5dc0415b557a.mp4
+
  -  - ----------------------------------------
 
  - **Identifies a person and shoots him**:dog:
