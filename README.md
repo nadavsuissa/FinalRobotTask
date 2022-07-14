@@ -43,6 +43,15 @@ _Detailed explanation of each action:_
 
 ----------------------------------------
 
+----------------------------------------
+
+ - **The robot shoots in all directions:**:anger:
+ 
+https://user-images.githubusercontent.com/73065095/178974303-3f1a9ee6-716e-4b01-9aa0-d7d6c51d0b77.mp4
+
+     
+
+----------------------------------------
 
  - **Traveled by a number of applause:**:clap:
   
