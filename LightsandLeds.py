@@ -4,6 +4,7 @@
 # Basic Defines:
 rotate_speed = 120  # Rotate Speed , Might Need to Change if too Fast!
 seconds, milli_seconds = 1, .05  # For Timeout... Robot Must Rest
+
 RGB1 = [
     [],  # Empty list box
     [255, 255, 255],  # RGB White
@@ -14,6 +15,7 @@ RGB1 = [
     [255, 0, 255],  # RGB Pink
     [0, 255, 255],  # RGB Cyan
 ]
+
 RGB2 = [
     [],  # Empty list box
     [255, 0, 0],  # RGB Red
