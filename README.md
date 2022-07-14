@@ -67,6 +67,7 @@ https://user-images.githubusercontent.com/73065095/178969199-dd33f848-a793-4027-
 
 The robot shoots in the direction of the one who gives it a blow, if you give it a blow from the right side then it turns to the right and then shoots likewise to the left side
 
+https://user-images.githubusercontent.com/73065095/178971994-c596c885-e654-423b-af68-da3f71a484f3.mp4
 
 
 
