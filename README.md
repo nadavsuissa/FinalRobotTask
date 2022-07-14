@@ -38,6 +38,9 @@ _Detailed explanation of each action:_
  - **Traveling in square trouble:**:black_square_button:
  
      The robot goes in a square shape, ie that goes at equal distances for example the distance that went to the right will be the same distance that           progresses forward so that it shows his ability to walk in any shape we want we chose a square
+     
+     https://user-images.githubusercontent.com/73065095/178973485-635cc538-916c-45bf-ba39-1280af8f7a25.mp4
+
 ----------------------------------------
 
 
