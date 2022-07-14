@@ -13,7 +13,7 @@ It mediates between the digital world and the real world and brings to life abst
 
              Changes the color of the lights(LightsandLeds.py)
              Traveling in square trouble(DriveFunctionality.py)
-             (BlasterFunctionality.py)
+             The robot shoots in all directions(BlasterFunctionality.py)
              Traveled by a number of applause(Cllaps.py)
              (BlasterIdentify.py)
              Identifies a person and shoots him(WatchDog.py)
