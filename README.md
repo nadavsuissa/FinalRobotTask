@@ -69,6 +69,8 @@ The robot shoots in the direction of the one who gives it a blow, if you give it
 
 The robot searches for the numbers so that it goes in the order of the numbers (you can set as many numbers as you want), we chose that the robot recognizes the mark of the numbers 1,2,3 at first the robot looks for the number 1 and shoots it and then continues to search for the consistent number of 1 which is 2 Another number or some other sign he ignores and continues to look for the next consistent number
 
+https://user-images.githubusercontent.com/73065095/178970716-44a7e0ed-7648-4128-98aa-9fe94ea400de.mp4
+
 
 ----------------------------------------
  _references_
