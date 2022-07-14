@@ -46,8 +46,8 @@ _Detailed explanation of each action:_
 
  - **Identifies a person and shoots him**:dog:
  
-    It's like a watchdog he goes around in every possible direction so he has the ability to look for a human, if he recognizes a human then he shoots him
-
+    It's like a watchdog he goes around in every possible direction so he has the ability to look for a human, if he recognizes a human then he shoots him,
+from what we see in the video the robot goes natural in all directions while recognizing a human so he input that there is a human and shot at him in addition to that we added a shot
 
 https://user-images.githubusercontent.com/73065095/178969199-dd33f848-a793-4027-9f6f-e8422d320d83.mp4
 
