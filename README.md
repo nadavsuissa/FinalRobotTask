@@ -8,8 +8,6 @@
 It mediates between the digital world and the real world and brings to life abstract theories through practical actions so that it can identify up to 44 markers, is able to identify and track any individual you select, gestures and applause to expand the possibilities for coding, fighting and learning
 
 
-
-
 :pushpin:_The actions of the robot:_
 ----------------------------------------
 
@@ -65,7 +63,7 @@ The robot searches for the numbers so that it goes in the order of the numbers (
 ----------------------------------------
  _references_
  
- 
+ https://www.dji.com/
  
 ----------------------------------------
  _Project participants:_
