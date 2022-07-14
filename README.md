@@ -29,7 +29,7 @@ _Detailed explanation of each action:_
 
  - **Changes the color of the lights:**:rainbow:
   
-     The robot changes its colors
+     The robot changes its colors so that rotates and changes the colors of its lamps
   
   https://user-images.githubusercontent.com/73065095/178971775-d6975ed6-a7bd-43a1-b8c2-a11f88370443.mp4
 
