@@ -59,7 +59,7 @@ _Detailed explanation of each action:_
  -  - ----------------------------------------
  - **Shoots in the direction of the blow**:punch:
 
-
+The robot shoots in the direction of the one who gives it a blow, if you give it a blow from the right side then it turns to the right and then shoots likewise to the left side
 
 
 
@@ -75,6 +75,7 @@ The robot searches for the numbers so that it goes in the order of the numbers (
  ----------------------------------------
 
 (https://www.dji.com/robomaster-s1) 
+
 https://github.com/dji-sdk/robomaster-sdk
 
 ----------------------------------------
