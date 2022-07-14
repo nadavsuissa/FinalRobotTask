@@ -63,8 +63,7 @@ The robot searches for the numbers so that it goes in the order of the numbers (
 ----------------------------------------
  _references_
  
- https://www.dji.com/
- 
+(https://www.dji.com/robomaster-s1) 
 ----------------------------------------
  _Project participants:_
 ----------------------------------------
