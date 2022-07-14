@@ -16,7 +16,7 @@ It mediates between the digital world and the real world and brings to life abst
              (BlasterFunctionality.py)
              Traveled by a number of applause(Cllaps.py)
              (BlasterIdentify.py)
-             Identifies a person and shoots him:dog:(WatchDog.py)
+             Identifies a person and shoots him(WatchDog.py)
              Shoots in the direction of the blow(HitDetection.py)
              The robot recognizes numbers and shoots numbers in ascending order (DriveandIdentify.py)
 
