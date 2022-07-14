@@ -16,7 +16,7 @@ It mediates between the digital world and the real world and brings to life abst
              (BlasterFunctionality.py)
              Traveled by a number of applause(Cllaps.py)
              (BlasterIdentify.py)
-             :dog:(WatchDog.py)
+             Identifies a person and shoots him:dog:(WatchDog.py)
              Shoots in the direction of the blow(HitDetection.py)
              The robot recognizes numbers and shoots numbers in ascending order (DriveandIdentify.py)
 
@@ -47,6 +47,16 @@ _Detailed explanation of each action:_
       The robot moves according to the number of applause, if you clap twice it goes forward, if you clap twice again then it goes back, twice more it goes right and twice more it goes left
  -  - ----------------------------------------
 
+ - **Identifies a person and shoots him**:dog:
+ 
+    It's like a watchdog he goes around in every possible direction so he has the ability to look for a human, if he recognizes a human then he shoots him
+
+
+
+
+
+
+ -  - ----------------------------------------
  - **Shoots in the direction of the blow**:punch:
 
 
